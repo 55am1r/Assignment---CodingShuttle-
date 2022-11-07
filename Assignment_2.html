@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/29f04b339b.js" crossorigin="anonymous"></script>
+    <title>Semantics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid;
+            background-color: yellow;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #header {
+            height: 18vw;
+            width: 100vw;
+            background-color: teal;
+        }
+
+        #navigation {
+            width: 18vw;
+            background-color: yellowgreen;
+        }
+
+        #aside {
+            width: 18vw;
+            background-color: wheat;
+        }
+
+        #main {
+            height: 60vw;
+            width: 34vw;
+            background-color: violet;
+        }
+
+        #footer {
+            height: 18vw;
+            width: 100vw;
+            background-color: tomato;
+        }
+
+        #sec_1 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 40%;
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+        #sec_1 p {
+            padding: 10px;
+            margin: 0%;
+        }
+
+        #sec_2 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 40%;
+            padding-top: 10px;
+            margin: 5px;
+            margin-left: 0px;
+        }
+
+        #sec_1 tr {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            margin: 0%;
+            padding: 0%;
+            list-style-type: none;
+            background-color: rgb(94, 232, 232);
+            display: flex;
+
+        }
+
+        ul li {
+            margin: 0%;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+        <h1>What are Semantic Elements?</h1> <br>
+        A semantic element clearly describes its meaning to both the browser and the developer.
+        <br>
+        Examples of <b>non-semantic elements :</b><i class="fa-solid fa-angle-left"></i>div<i
+            class="fa-solid fa-angle-right"></i>
+        and <i class="fa-solid fa-angle-left"></i>span<i class="fa-solid fa-angle-right"></i> - Tells nothing about its
+        content. <br>
+
+        Examples of <b>semantic elements :</b> <i class="fa-solid fa-angle-left"></i>form<i
+            class="fa-solid fa-angle-right"></i>,
+        <i class="fa-solid fa-angle-left"></i>table<i class="fa-solid fa-angle-right"></i>,
+        and <i class="fa-solid fa-angle-left"></i>article<i class="fa-solid fa-angle-right"></i> - Clearly defines its
+        content.</p>
+    </div>
+    <hr>
+    <h5>Clear understanding of how Semantic Elements works :</h5>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="5" id="header">
+                <p><i class="fa-solid fa-angle-left"></i>Header<i class="fa-solid fa-angle-right"></i> <br>
+                    <br><br><em> The <i class="fa-solid fa-angle-left"></i>Header<i class="fa-solid fa-angle-right"></i>
+                        element
+                        represents a
+                        container for introductory content or a set of navigational links.
+
+                        A <i class="fa-solid fa-angle-left"></i>Header<i class="fa-solid fa-angle-right"></i> element
+                        typically contains:
+
+                        one or more heading elements (<i class="fa-solid fa-angle-left"></i>h1<i
+                            class="fa-solid fa-angle-right"></i> - <i class="fa-solid fa-angle-left"></i>h6<i
+                            class="fa-solid fa-angle-right"></i>),
+                        logo or icon,
+                        authorship information. </em>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" id="navigation">
+                <p><i class="fa-solid fa-angle-left"></i>Navigation<i class="fa-solid fa-angle-right"></i>
+                    <br><br><br><em>The <i class="fa-solid fa-angle-left"></i>nav<i class="fa-solid fa-angle-right"></i>
+                        element defines a set
+                        of navigation links. </em>
+                </p>
+            </td>
+            <td rowspan="3" colspan="3" id="main"><i class="fa-solid fa-angle-left"></i>Main<i
+                    class="fa-solid fa-angle-right"></i>
+                <section id="sec_1">
+                    <p><i class="fa-solid fa-angle-left"></i>Section<i class="fa-solid fa-angle-right"></i>
+                    <ul>
+                        <li>Article_1</li>
+                        <li>Article_2</li>
+                        <li>Article_3</li>
+                    </ul>
+                    <br> </p>
+                    <em>The
+                        <i class="fa-solid fa-angle-left"></i>article<i class="fa-solid fa-angle-right"></i> element
+                        specifies independent, self-contained content.
+
+                        <br>
+                        Examples of where the <i class="fa-solid fa-angle-left"></i>article<i
+                            class="fa-solid fa-angle-right"></i> element can be used:
+
+                        Forum posts,
+                        Blog posts,
+                        User comments,
+                        Product cards,
+                        Newspaper articles.</em>
+                </section>
+                <section id="sec_2">
+                    <p> <i class="fa-solid fa-angle-left"></i>Section<i class="fa-solid fa-angle-right"></i>
+                        <br><br><br><br><em>
+                            &emsp;The <i class="fa-solid fa-angle-left"></i>Section<i
+                                class="fa-solid fa-angle-right"></i> element defines a section in a document.
+
+                            According to W3C's HTML documentation: "A section is a thematic grouping of content,
+                            typically with a heading."
+                            <br>
+                            Examples of where a <i class="fa-solid fa-angle-left"></i>Section<i
+                                class="fa-solid fa-angle-right"></i> element can be used:
+
+                            Chapters,
+                            Introduction,
+                            News items,
+                            Contact information </em>
+                    </p>
+                </section>
+            </td>
+            <td rowspan="3" id="aside">
+                <p><i class="fa-solid fa-angle-left"></i>Aside<i class="fa-solid fa-angle-right"></i>
+                    <br><br><br> <em> The <i class="fa-solid fa-angle-left"></i>aside<i
+                            class="fa-solid fa-angle-right"></i> element defines some
+                        content aside from the content it is placed in (like a sidebar).
+
+                        The <i class="fa-solid fa-angle-left"></i>aside<i class="fa-solid fa-angle-right"></i>
+                         content should be indirectly related to the surrounding content.</em>
+                </p>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="5" id="footer">
+                <p> <i class="fa-solid fa-angle-left"></i>Footer<i class="fa-solid fa-angle-right"></i>
+                    <br><br><br>
+                    <em> The <i class="fa-solid fa-angle-left"></i>Footer<i class="fa-solid fa-angle-right"></i> element
+                        defines a
+                        footer for a document or section.
+                        <br>
+                        A <i class="fa-solid fa-angle-left"></i>Footer<i class="fa-solid fa-angle-right"></i> element
+                        typically contains:
+
+                        authorship information,
+                        copyright information,
+                        contact information,
+                        sitemap,
+                        back to top links,
+                        related documents.</em>
+
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <h4>©Shaik Sameer-All Rights Reserved.</h4>
+</body>
+
+</html>
